@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,17 +15,16 @@
     <div class="box">
         <div class="item">
             <% for (var i = 0; i < newItemsAdd.length; i++) { %>
-                <p> <%= newItemsAdd[i] %> </p>
+                <p><input type="checkbox"> 
+                <%= newItemsAdd[i] %></p><br>
             <% } %>
         </div>
-            
-        </ul>
+        <form class=""  action="/" method="post">
+            <input type="text" name="newItem" placeholder="New Item">
+            <button type="submit">+</button> 
+        </form>
     </div>
     
-    <form class=""  action="/" method="post">
-        <input type="checkbox">
-        <input type="text" name="newItem" placeholder="New Item">
-        <button type="submit">+</button> 
-    </form>
+    
 </body>
 </html>
