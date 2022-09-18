@@ -24,9 +24,9 @@ html {
   }
   
   .item {
-    min-height: 70px;
+    min-height: 50px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     border-bottom: 1px solid #F1F1F1;
   }
   
@@ -39,7 +39,7 @@ html {
     text-decoration-color: #A683E3;
   } */
 
-  input:checked + p {
+  input:checked + label {
     text-decoration: line-through;
     text-decoration-color: #A683E3;
   }
@@ -52,11 +52,10 @@ html {
   
   p {
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
     font-weight: 200;
     color: #00204a;
-    display: inline-block;
   }
   
   form {
